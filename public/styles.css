@@ -137,3 +137,10 @@ footer{
   margin-top: 120px;
   color: #aaa;
 }
+.info {
+  border: 1px solid black;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 10px;
+}
