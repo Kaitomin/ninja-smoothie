@@ -11,11 +11,12 @@
     <button>Sign Up</button>
 </form>
 
+<p class="info">This site is purely for demonstration, please use fake credentials</p>
+
 <script>
     const form = document.querySelector('form');
     const emailError = document.querySelector('.error.email');
     const passwordError = document.querySelector('.error.password');
-
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
