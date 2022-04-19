@@ -139,8 +139,53 @@ footer{
 }
 .info {
   border: 1px solid black;
+  max-width: 450px;
   width: max-content;
   margin: 0 auto;
   margin-top: 2em;
   padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  .headings {
+    text-align: center;
+  }
+  nav {
+    align-items: center;
+    flex-direction: column;
+  }
+  nav h1 {
+    margin-bottom: 1em;
+  }
+  nav > ul {
+    align-items: center;
+    flex-direction: column;
+  }
+  nav > ul li {
+    margin-left: 0;
+  }
+  .recipes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    margin: 0;
+  }
+  .recipes {
+    grid-template-columns: 1fr;
+  }
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+  .info {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
 }
